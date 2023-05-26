@@ -30,6 +30,7 @@ Multiple Windows Test
     # Capture Page Screenshot
 
 Table Test
+    [Tags]    TableTest
     Click Link    xpath=//*[@id="content"]/ul/li[41]/a
     # Maximize Browser Window
     ${data}=    Get Text    xpath=//*[@id="table1"]/tbody/tr[1]/td[5]
