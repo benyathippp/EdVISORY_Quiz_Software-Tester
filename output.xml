@@ -1,168 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.16 on darwin)" generated="20230526 17:28:42.912" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.16 on darwin)" generated="20230529 14:24:49.935" rpa="false" schemaversion="3">
 <suite id="s1" name="Demo" source="/Users/benyathip/Desktop/EdVISORY_Quiz_Software-Tester/demo.robot">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>https://the-internet.herokuapp.com/</arg>
 <arg>Chrome</arg>
 <arg>maximize browser window</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230526 17:28:42.990" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
-<status status="PASS" starttime="20230526 17:28:42.989" endtime="20230526 17:28:47.512"/>
+<msg timestamp="20230529 14:24:50.014" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20230529 14:24:50.013" endtime="20230529 14:24:54.780"/>
 </kw>
-<test id="s1-t1" name="File Upload Test" line="9">
+<test id="s1-t1" name="File Upload Test" line="10">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/ul/li[18]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:47.515" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[18]/a'.</msg>
-<status status="PASS" starttime="20230526 17:28:47.514" endtime="20230526 17:28:48.112"/>
+<msg timestamp="20230529 14:24:54.783" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[18]/a'.</msg>
+<status status="PASS" starttime="20230529 14:24:54.782" endtime="20230529 14:24:55.362"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:49.114" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:48.113" endtime="20230526 17:28:49.114"/>
+<msg timestamp="20230529 14:24:56.366" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:24:55.363" endtime="20230529 14:24:56.366"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>id=file-upload</arg>
-<arg>/Users/benyathip/Desktop/EdVISORY_Quiz_Software-Tester/data/data1.csv</arg>
+<arg>/Users/benyathip/Desktop/EdVISORY_Quiz_Software-Tester/data/data.csv</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20230526 17:28:49.115" level="INFO">Sending /Users/benyathip/Desktop/EdVISORY_Quiz_Software-Tester/data/data1.csv to browser.</msg>
-<status status="PASS" starttime="20230526 17:28:49.114" endtime="20230526 17:28:49.162"/>
+<msg timestamp="20230529 14:24:56.368" level="INFO">Sending /Users/benyathip/Desktop/EdVISORY_Quiz_Software-Tester/data/data.csv to browser.</msg>
+<status status="PASS" starttime="20230529 14:24:56.367" endtime="20230529 14:24:56.419"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=file-submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:49.162" level="INFO">Clicking button 'id=file-submit'.</msg>
-<status status="PASS" starttime="20230526 17:28:49.162" endtime="20230526 17:28:49.477"/>
+<msg timestamp="20230529 14:24:56.420" level="INFO">Clicking button 'id=file-submit'.</msg>
+<status status="PASS" starttime="20230529 14:24:56.420" endtime="20230529 14:24:56.747"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>File Uploaded!</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230526 17:28:49.486" level="INFO">Current page contains text 'File Uploaded!'.</msg>
-<status status="PASS" starttime="20230526 17:28:49.477" endtime="20230526 17:28:49.486"/>
+<msg timestamp="20230529 14:24:56.757" level="INFO">Current page contains text 'File Uploaded!'.</msg>
+<status status="PASS" starttime="20230529 14:24:56.747" endtime="20230529 14:24:56.757"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230529 14:24:56.960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230529 14:24:56.757" endtime="20230529 14:24:56.960"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:50.488" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:49.487" endtime="20230526 17:28:50.489"/>
+<msg timestamp="20230529 14:24:57.962" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:24:56.960" endtime="20230529 14:24:57.962"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary" type="TEARDOWN">
 <arg>https://the-internet.herokuapp.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230526 17:28:50.491" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<status status="PASS" starttime="20230526 17:28:50.490" endtime="20230526 17:28:50.803"/>
+<msg timestamp="20230529 14:24:57.964" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230529 14:24:57.963" endtime="20230529 14:24:58.354"/>
 </kw>
 <tag>FileUpload</tag>
-<status status="PASS" starttime="20230526 17:28:47.513" endtime="20230526 17:28:50.803"/>
+<status status="PASS" starttime="20230529 14:24:54.781" endtime="20230529 14:24:58.354"/>
 </test>
-<test id="s1-t2" name="Multiple Windows Test" line="19">
+<test id="s1-t2" name="Multiple Windows Test" line="21">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/ul/li[33]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:50.805" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[33]/a'.</msg>
-<status status="PASS" starttime="20230526 17:28:50.804" endtime="20230526 17:28:51.190"/>
+<msg timestamp="20230529 14:24:58.355" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[33]/a'.</msg>
+<status status="PASS" starttime="20230529 14:24:58.355" endtime="20230529 14:24:58.691"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:52.192" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:51.190" endtime="20230526 17:28:52.193"/>
+<msg timestamp="20230529 14:24:59.694" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:24:58.692" endtime="20230529 14:24:59.694"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/div/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:52.195" level="INFO">Clicking link 'xpath=//*[@id="content"]/div/a'.</msg>
-<status status="PASS" starttime="20230526 17:28:52.193" endtime="20230526 17:28:52.266"/>
+<msg timestamp="20230529 14:24:59.696" level="INFO">Clicking link 'xpath=//*[@id="content"]/div/a'.</msg>
+<status status="PASS" starttime="20230529 14:24:59.695" endtime="20230529 14:24:59.759"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230526 17:28:52.266" endtime="20230526 17:28:52.278"/>
+<status status="PASS" starttime="20230529 14:24:59.759" endtime="20230529 14:24:59.771"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>New Window</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230526 17:28:52.543" level="INFO">Current page contains text 'New Window'.</msg>
-<status status="PASS" starttime="20230526 17:28:52.278" endtime="20230526 17:28:52.543"/>
+<msg timestamp="20230529 14:25:00.036" level="INFO">Current page contains text 'New Window'.</msg>
+<status status="PASS" starttime="20230529 14:24:59.771" endtime="20230529 14:25:00.036"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:53.544" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:52.543" endtime="20230526 17:28:53.545"/>
+<msg timestamp="20230529 14:25:01.037" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:25:00.036" endtime="20230529 14:25:01.038"/>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20230526 17:28:53.545" endtime="20230526 17:28:53.605"/>
+<status status="PASS" starttime="20230529 14:25:01.038" endtime="20230529 14:25:01.093"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MAIN</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230526 17:28:53.605" endtime="20230526 17:28:53.610"/>
+<status status="PASS" starttime="20230529 14:25:01.093" endtime="20230529 14:25:01.098"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:54.612" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:53.610" endtime="20230526 17:28:54.613"/>
+<msg timestamp="20230529 14:25:02.099" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:25:01.098" endtime="20230529 14:25:02.099"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary" type="TEARDOWN">
 <arg>https://the-internet.herokuapp.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230526 17:28:54.614" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<status status="PASS" starttime="20230526 17:28:54.614" endtime="20230526 17:28:55.037"/>
+<msg timestamp="20230529 14:25:02.101" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230529 14:25:02.100" endtime="20230529 14:25:02.423"/>
 </kw>
 <tag>MultipleWindows</tag>
-<status status="PASS" starttime="20230526 17:28:50.804" endtime="20230526 17:28:55.037"/>
+<status status="PASS" starttime="20230529 14:24:58.354" endtime="20230529 14:25:02.423"/>
 </test>
-<test id="s1-t3" name="Table Test" line="32">
+<test id="s1-t3" name="Table Test" line="35">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="content"]/ul/li[41]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:55.038" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[41]/a'.</msg>
-<status status="PASS" starttime="20230526 17:28:55.038" endtime="20230526 17:28:55.938"/>
+<msg timestamp="20230529 14:25:02.424" level="INFO">Clicking link 'xpath=//*[@id="content"]/ul/li[41]/a'.</msg>
+<status status="PASS" starttime="20230529 14:25:02.423" endtime="20230529 14:25:03.342"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${data}</var>
 <arg>xpath=//*[@id="table1"]/tbody/tr[1]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230526 17:28:55.961" level="INFO">${data} = http://www.jsmith.com</msg>
-<status status="PASS" starttime="20230526 17:28:55.939" endtime="20230526 17:28:55.961"/>
+<msg timestamp="20230529 14:25:03.365" level="INFO">${data} = http://www.jsmith.com</msg>
+<status status="PASS" starttime="20230529 14:25:03.343" endtime="20230529 14:25:03.365"/>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${columns}</var>
 <arg>xpath://*[@id="table1"]/tbody/tr[1]/td</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230526 17:28:55.969" level="INFO">${columns} = 6</msg>
-<status status="PASS" starttime="20230526 17:28:55.961" endtime="20230526 17:28:55.969"/>
+<msg timestamp="20230529 14:25:03.373" level="INFO">${columns} = 6</msg>
+<status status="PASS" starttime="20230529 14:25:03.365" endtime="20230529 14:25:03.373"/>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${rows}</var>
 <arg>xpath://*[@id="table1"]/tbody/tr</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230526 17:28:55.976" level="INFO">${rows} = 4</msg>
-<status status="PASS" starttime="20230526 17:28:55.969" endtime="20230526 17:28:55.976"/>
+<msg timestamp="20230529 14:25:03.381" level="INFO">${rows} = 4</msg>
+<status status="PASS" starttime="20230529 14:25:03.374" endtime="20230529 14:25:03.381"/>
 </kw>
 <kw name="Table Header Should Contain" library="SeleniumLibrary">
 <arg>id=table2</arg>
 <arg>Action</arg>
 <doc>Verifies table header contains text ``expected``.</doc>
-<status status="PASS" starttime="20230526 17:28:55.977" endtime="20230526 17:28:56.044"/>
+<status status="PASS" starttime="20230529 14:25:03.381" endtime="20230529 14:25:03.447"/>
 </kw>
 <kw name="Table Row Should Contain" library="SeleniumLibrary">
 <arg>class=web-site</arg>
 <arg>3</arg>
 <arg>http://www.jdoe.com</arg>
 <doc>Verifies that table row contains text ``expected``.</doc>
-<status status="PASS" starttime="20230526 17:28:56.044" endtime="20230526 17:28:56.062"/>
+<status status="PASS" starttime="20230529 14:25:03.447" endtime="20230529 14:25:03.465"/>
 </kw>
 <kw name="Table Column Should Contain" library="SeleniumLibrary">
 <arg>class=header</arg>
 <arg>5</arg>
 <arg>Web Site</arg>
 <doc>Verifies table column contains text ``expected``.</doc>
-<status status="PASS" starttime="20230526 17:28:56.062" endtime="20230526 17:28:56.079"/>
+<status status="PASS" starttime="20230529 14:25:03.465" endtime="20230529 14:25:03.482"/>
 </kw>
 <kw name="Table Cell Should Contain" library="SeleniumLibrary">
 <arg>id=table2</arg>
@@ -170,28 +175,29 @@
 <arg>2</arg>
 <arg>Tim</arg>
 <doc>Verifies table cell contains text ``expected``.</doc>
-<msg timestamp="20230526 17:28:56.101" level="INFO">Table cell contains 'Tim'.</msg>
-<status status="PASS" starttime="20230526 17:28:56.079" endtime="20230526 17:28:56.101"/>
+<msg timestamp="20230529 14:25:03.505" level="INFO">Table cell contains 'Tim'.</msg>
+<status status="PASS" starttime="20230529 14:25:03.482" endtime="20230529 14:25:03.505"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230526 17:28:57.103" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230526 17:28:56.101" endtime="20230526 17:28:57.103"/>
+<msg timestamp="20230529 14:25:04.507" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230529 14:25:03.505" endtime="20230529 14:25:04.508"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary" type="TEARDOWN">
 <arg>https://the-internet.herokuapp.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230526 17:28:57.104" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<status status="PASS" starttime="20230526 17:28:57.104" endtime="20230526 17:28:57.501"/>
+<msg timestamp="20230529 14:25:04.509" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" starttime="20230529 14:25:04.509" endtime="20230529 14:25:04.835"/>
 </kw>
-<status status="PASS" starttime="20230526 17:28:55.037" endtime="20230526 17:28:57.501"/>
+<tag>TableTest</tag>
+<status status="PASS" starttime="20230529 14:25:02.423" endtime="20230529 14:25:04.836"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230526 17:28:57.501" endtime="20230526 17:28:57.576"/>
+<status status="PASS" starttime="20230529 14:25:04.836" endtime="20230529 14:25:04.909"/>
 </kw>
-<status status="PASS" starttime="20230526 17:28:42.913" endtime="20230526 17:28:57.576"/>
+<status status="PASS" starttime="20230529 14:24:49.936" endtime="20230529 14:25:04.909"/>
 </suite>
 <statistics>
 <total>
@@ -200,6 +206,7 @@
 <tag>
 <stat pass="1" fail="0" skip="0">FileUpload</stat>
 <stat pass="1" fail="0" skip="0">MultipleWindows</stat>
+<stat pass="1" fail="0" skip="0">TableTest</stat>
 </tag>
 <suite>
 <stat pass="3" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
